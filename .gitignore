@@ -1,2 +1,3 @@
-receitas/node_modules
-login/node_modules
+/Angular/node_modules
+/login/node_modules
+/receitas/node_modules
