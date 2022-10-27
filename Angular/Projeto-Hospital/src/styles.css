@@ -1,1 +1,110 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  background-size: 100% 100%;
+}
+
+ul{
+  list-style: none;
+}
+
+/* Variaveis */
+:root{
+--header-height: 4.5rem;
+--hue: 159;
+
+--base-color: hsl(var(--hue) 36% 57%);
+--base-color-second: hsl(var(--hue) 65% 88%);
+--base-color-alt: hsl(var(--hue) 57% 53%);
+--title-color: hsl(var(--hue) 41% 10%);
+--text-color: hsl(0 0% 46%);
+--text-color-light: hsl(0 0% 98%);
+--body-color: hsl(0 0% 98%);
+
+--subtitle-font-size: 1rem;
+
+--title-fonts: 'Poppins', sans-serif;
+--body-fonts: 'DM Sans', sans-serif;
+
+}
+/* base */
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+.title{
+  font: 700 1.875rem var(--title-fonts);
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+
+.button{
+ background-color: var(--base-color);
+ color: var(--text-color-light);
+ height: 3.5rem;
+ display: inline-flex;
+ align-items: center;
+ padding: 0 2rem;
+ border-radius: 0.25rem;
+ font: 500 1rem var(--body-fonts);
+ transition: background 0.3s;
+}
+
+.button:hover{
+  background: var(--base-color-alt);
+}
+
+
+.divider-1{
+  height: 1px;
+  background: linear-gradient(
+  270deg,
+  hsla(var(--hue), 36%, 57%, 1) 0%,
+  hsla(var(--hue), 65%, 88%, 0.34) 100%
+  );
+}
+
+.container{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+
+.grid{
+  display: grid;
+  gap: 2rem;
+}
+.section{
+  padding: calc(5rem + var(--header-height)) 0;
+}
+
+.section .title{
+  margin-bottom: 1rem;
+}
+
+
+.section header{
+  margin-bottom: 4rem;
+}
+
+.section header  strong{
+  color: var(--base-color);
+}
+
+.section .subtitle {
+  font-size: var(--subtitle-font-fize);
+}

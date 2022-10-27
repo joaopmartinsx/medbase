@@ -90,6 +90,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/fonts/style.css",
               "src/styles.css"
             ],
             "scripts": []
