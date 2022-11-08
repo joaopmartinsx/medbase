@@ -29,6 +29,11 @@
   color: var(--body-color);
 }
 
+.logo img{
+  width: 200px;
+  height: auto;
+}
+
 
 
 
@@ -36,7 +41,7 @@
 /* navigation */
 
 nav{
-  height: var(--header-height);
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -106,7 +111,9 @@ nav.show .menu{
   place-content: center;
 }
 
-
+nav img{
+  align-items: center;
+}
 
 
 nav.show ul.grid{
