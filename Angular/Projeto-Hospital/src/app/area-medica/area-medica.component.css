@@ -43,3 +43,24 @@
 	color: white;
 	border: 0;
 }
+
+.form-group-login label a{
+  padding: 5px;
+	font-size: 20px;
+	padding-right: 6px;
+	font-weight: 300;
+	color: white;
+  background: #00bfa5;
+  margin-top: 10px;
+
+}
+
+.form-group-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+
