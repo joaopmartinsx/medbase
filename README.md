@@ -10,9 +10,15 @@
   
 ## Índice
 
-Integrantes...........................................................................1
+Integrantes .......................................................................................................................1
   
-Passo a Passo Barramentos............................................2
+Passo a Passo Barramentos ........................................................................................2
+
+Especificações ................................................................................................................3
+
+Docuemntação ................................................................................................................4
+
+Configurações do Ambiente ..........................................................................................5
 
 </center>
 
@@ -24,26 +30,20 @@ Passo a Passo Barramentos............................................2
 
 Beno Lopes Dias RA: 821148379
 
-Camilly Arissa Sugai RA: 821149445
+Camilly Arissa Sugai  RA: 821149445
 
 Christian Frank RA: 82112912
 
 Guilherme Henne Gonçalves RA: 821235244
 
+João Pedro Martins Xavier RA: 822162664
+  
 Larissa Fossato RA: 82117042
 
-João Pedro Martins Xavier RA: 822162664
-
-Vinícius Gonçalves Ferrari RA: 821147755
+Vinícius Gonçalves Ferrari  RA: 821147755
 
 </center>
-
-
-
-
-
-
-
+  
 
 ---
 <center>
@@ -79,6 +79,7 @@ Vinícius Gonçalves Ferrari RA: 821147755
 
 > Algumas bibliotecas que são utilizadas pelo gerenciador de pacote NPM.
 * NPM
+* Angular Material
 
 </center>
 
