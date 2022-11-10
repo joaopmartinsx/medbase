@@ -1,32 +1,21 @@
-<center>
 
 # MedBase
 
 ![632a168e-820c-422e-93af-f9ec406dff51](https://user-images.githubusercontent.com/92595567/200587249-ad57a51b-4d25-478d-8a1a-343946e82c4d.jpg)
 
-  
 ---
 <center>
   
 ## Índice
 
-Integrantes .......................................................................................................................1
-  
-Passo a Passo Barramentos ........................................................................................2
-
-Especificações ................................................................................................................3
-
-Docuemntação ................................................................................................................4
-
-Configurações do Ambiente ..........................................................................................5
-
-</center>
-
+* [Integrantes](#integrantes)
+* [Tecnologias Utilizadas](#tecnologias-utilizadas)
+* [Passo a Passo](#passo-a-passo)
+* [Agradecimentos](#agradecimentos)
   
 ---  
-<center>
 
-## Integrantes do grupo
+## Integrantes
 
 Beno Lopes Dias RA: 821148379
 
@@ -41,14 +30,19 @@ João Pedro Martins Xavier RA: 822162664
 Larissa Fossato RA: 82117042
 
 Vinícius Gonçalves Ferrari  RA: 821147755
-
-</center>
   
-
 ---
-<center>
+  
+## Tecnologias Utilizadas
 
-## Passo a Passo de Barramentos
+- [Node.js](https://nodejs.org/en/)
+- [Angular](https://angular.io/)
+- [Bootstra](https://getbootstrap.com/)
+- [XAMPP](https://www.apachefriends.org/pt_br/index.html)
+  
+---
+
+## Passo a Passo
 
 * Primeiro
 * Segundo
@@ -56,11 +50,7 @@ Vinícius Gonçalves Ferrari  RA: 821147755
 * Quarto
 * Quinto
 
-</center>
-
-  
 ---
-<center>
   
 ## Especificações
 
@@ -69,11 +59,7 @@ Vinícius Gonçalves Ferrari  RA: 821147755
 * BootStrap
 * MySQL
 
-</center>
-
-  
 ---
-<center>
   
 ## Documentação
 
@@ -81,11 +67,7 @@ Vinícius Gonçalves Ferrari  RA: 821147755
 * NPM
 * Angular Material
 
-</center>
-
-
 ---
-<center>
 
 ## Configuração do Ambiente
 
@@ -97,4 +79,13 @@ ou (SSH)
 `$ git clone https://github.com/joaopmartinsx/medbase.git`
 
 ---
-</center>
+
+## Vídeo
+  
+[YouTube]()
+
+---
+ 
+## Agradecimentos
+  
+Nossos agradecimentos
