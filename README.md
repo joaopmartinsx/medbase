@@ -42,7 +42,7 @@ Vinícius Gonçalves Ferrari  RA: 821147755
   
 * [Angular Bootstrap](https://ng-bootstrap.github.io/#/getting-started)
 * [MySQL](https://dev.mysql.com/doc/)
-* [NPM e MySQL](https://www.npmjs.com/package/mysql)
+* [NPM+MySQL](https://www.npmjs.com/package/mysql)
 
 ##### [(voltar ao topo)](#medbase)
 ---
