@@ -1,10 +1,10 @@
 # MedBase
+
 ![logos](https://user-images.githubusercontent.com/111136643/201095387-b4ec146b-7c59-4a37-a89d-854fb06190e2.jpeg)
 
 ---
-<center>
   
-## Índice 
+## Índice
 
 * [Integrantes](#integrantes)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas)
@@ -30,16 +30,19 @@ Larissa Fossato RA: 82117042
 
 Vinícius Gonçalves Ferrari  RA: 821147755
   
+##### [(voltar ao topo)](#medbase)
+---
+
+## Documentação
+  
+>Algumas documentações utilizadas no desenvolvimento do projeto
+  
+* [Angular Bootstrap](https://ng-bootstrap.github.io/#/getting-started)
+* [MySQL](https://dev.mysql.com/doc/)
+* [NPM e MySQL](https://www.npmjs.com/package/mysql)
 
 ##### [(voltar ao topo)](#medbase)
 ---
-  
-## Documentação
->Algumas documentações utilizadas no desenvolvimento do projeto
-  
-
-##### [(voltar ao topo)](#medbase)
- ---
   
 ## Tecnologias Utilizadas
 
@@ -47,7 +50,8 @@ Vinícius Gonçalves Ferrari  RA: 821147755
 - [Angular](https://angular.io/)
 - [Bootstra](https://getbootstrap.com/)
 - [XAMPP](https://www.apachefriends.org/pt_br/index.html)
-
+- [MySQL](https://dev.mysql.com/downloads/workbench/)
+  
 ##### [(voltar ao topo)](#medbase)
 ---
 
@@ -63,12 +67,13 @@ Vinícius Gonçalves Ferrari  RA: 821147755
 ---
   
 ## Especificações
-
-* NodeJS >= 14.0.0
-* AngularJS 14
-* BootStrap
-* MySQL
   
+> Versões dos sistemas utilizados no projeto
+* Node.JS >= 14.0.0
+* Angular.JS >= 14.2.0
+* BootStrap >= 5.2.2
+* MySQL Workbench >= 8.0.31
+
 ##### [(voltar ao topo)](#medbase)
 ---
 
@@ -94,5 +99,5 @@ ou (SSH)
 ## Agradecimentos
   
 Nossos agradecimentos
-  
+
 ##### [(voltar ao topo)](#medbase)
