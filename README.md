@@ -7,9 +7,12 @@
 ## Índice
 
 * [Integrantes](#integrantes)
+* [Documentação](#documentação)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas)
 * [Passo a Passo](#passo-a-passo)
 * [Especificações do sistema](#especificações)
+* [Configurações do Ambiente](#configuração-do-ambiente)
+* [Vídeo](#vídeo)
 * [Agradecimentos](#agradecimentos)
   
 ---  
@@ -48,7 +51,7 @@ Vinícius Gonçalves Ferrari  RA: 821147755
 
 - [Node.js](https://nodejs.org/en/)
 - [Angular](https://angular.io/)
-- [Bootstra](https://getbootstrap.com/)
+- [Bootstrap](https://getbootstrap.com/)
 - [XAMPP](https://www.apachefriends.org/pt_br/index.html)
 - [MySQL](https://dev.mysql.com/downloads/workbench/)
   
@@ -95,9 +98,5 @@ ou (SSH)
 
 ##### [(voltar ao topo)](#medbase)
 ---
- 
-## Agradecimentos
-  
-Nossos agradecimentos
 
-##### [(voltar ao topo)](#medbase)
+## Agradecimentos
