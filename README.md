@@ -1,7 +1,7 @@
 
 # MedBase
 
-![632a168e-820c-422e-93af-f9ec406dff51](https://user-images.githubusercontent.com/92595567/200587249-ad57a51b-4d25-478d-8a1a-343946e82c4d.jpg)
+![logos](https://user-images.githubusercontent.com/111136643/201095387-b4ec146b-7c59-4a37-a89d-854fb06190e2.jpeg)
 
 ---
 <center>
@@ -11,6 +11,7 @@
 * [Integrantes](#integrantes)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas)
 * [Passo a Passo](#passo-a-passo)
+* [Especificações do sistema](#especificações)
 * [Agradecimentos](#agradecimentos)
   
 ---  
@@ -30,6 +31,12 @@ João Pedro Martins Xavier RA: 822162664
 Larissa Fossato RA: 82117042
 
 Vinícius Gonçalves Ferrari  RA: 821147755
+  
+---
+
+## Documentação
+>Algumas documentações utilizadas no desenvolvimento do projeto
+  
   
 ---
   
@@ -58,14 +65,6 @@ Vinícius Gonçalves Ferrari  RA: 821147755
 * AngularJS 14
 * BootStrap
 * MySQL
-
----
-  
-## Documentação
-
-> Algumas bibliotecas que são utilizadas pelo gerenciador de pacote NPM.
-* NPM
-* Angular Material
 
 ---
 
