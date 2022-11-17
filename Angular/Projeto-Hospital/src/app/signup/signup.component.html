@@ -1,0 +1,19 @@
+
+<div class="box">
+  <div class="box-login">
+    <h2>Cadastrar - se</h2>
+    <form [formGroup]="signupForm$" (ngSubmit)="signup()" novalidate>
+      <input #value value="" matInput type="text" formControlName="nome" placeholder="Nome" required>
+      <input  matInput type="text" formControlName="email" placeholder="Email" required>
+      <input  matInput type="text" formControlName="idade" placeholder="Idade" required>
+      <input  matInput type="text" formControlName="cpf" placeholder="CPF" required>
+      <input  matInput type="password" formControlName="senha" placeholder="Senha" required>
+      <div class="form-group-login left">
+        <button color="accent" mat-raised-button [disabled]="!signupForm$.valid" type="submit"><span>Cadastrar</span></button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<app-footer></app-footer>
