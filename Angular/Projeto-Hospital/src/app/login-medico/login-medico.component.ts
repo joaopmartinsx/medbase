@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from '../services/auth/auth.service';
 
 @Component({
   selector: 'app-login-medico',
@@ -6,10 +9,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-medico.component.css']
 })
 export class LoginMedicoComponent implements OnInit {
+  loginForm!: FormGroup;
 
-  constructor() { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
+    this.loginForm = this.createFormGroup();
   }
+
+  createFormGroup(): FormGroup {
+    return new FormGroup({
+      crm: new FormControl("", [Validators.required, Validators.minLength(1)]),
+      senha: new FormControl("", [Validators.required, Validators.minLength(7)]),
+    });
+  }
+
+  login(): void {
+    this.authService.loginMedico(this.loginForm.value.crm,this.loginForm.value.senha).subscribe(
+     (msg) => {
+       if(msg.token){
+         console.log('autenticado')
+         this.router.navigate(["telaMedico"]);
+       }else{
+         console.log('nao autenticado')
+       }
+     }
+    );
+   }
 
 }

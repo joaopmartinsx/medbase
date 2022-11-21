@@ -1,1 +1,40 @@
-<p>pagina-medico works!</p>
+<div class="menu">
+  <div class="menu-wrapper">
+    <div class="box-usuario">
+      <div class="avatar-usuario">
+        <fa-icon [icon]="faUser"></fa-icon>
+      </div>
+      <div class="nome-usuario">
+        <p>Dr. Fran</p>
+        <p>Médico</p>
+      </div>
+    </div>
+
+    <div class="items-menu">
+      <h2>Atendimento</h2>
+      <a routerLink=""  routerLinkActive="active-link">Consultas Pacientes</a>
+      <a routerLink=""  routerLinkActive="active-link">Receitar Pacientes</a>
+      <a routerLink=""
+        routerLinkActive="active-link">Chat - Pacientes</a>
+      <a routerLink=""  routerLinkActive="active-link">Suporte técnico</a>
+    </div>
+
+  </div>
+</div>
+
+<header>
+  <div class="center">
+    <div class="menu-btn">
+      <fa-icon [icon]="faBars"></fa-icon>
+    </div>
+    <div class="loggout">
+      <a href="#"><i class="fa fa-home"></i> <span>Pagina Inicial</span> </a>
+    </div>
+    <div class="clear"></div>
+  </div>
+</header>
+
+<router-outlet></router-outlet>
+
+
+

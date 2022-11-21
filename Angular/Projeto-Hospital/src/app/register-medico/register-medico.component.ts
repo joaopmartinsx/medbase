@@ -29,6 +29,7 @@ export class RegisterMedicoComponent implements OnInit {
     this.authService.medico(this.medicoForm.value).subscribe((msg) => {
       if(msg.auth){
         console.log('autenticado')
+        this.router.navigate(['loginMedico'])
       }else{
         console.log('nao autenticado')
       }

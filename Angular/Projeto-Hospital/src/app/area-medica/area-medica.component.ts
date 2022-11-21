@@ -33,7 +33,7 @@ export class AreaMedicaComponent implements OnInit {
     (msg) => {
       if(msg.token){
         console.log('autenticado')
-        this.router.navigate(["usuario"]);
+        this.router.navigate(["usuario/consulta"]);
       }else{
         console.log('nao autenticado')
       }

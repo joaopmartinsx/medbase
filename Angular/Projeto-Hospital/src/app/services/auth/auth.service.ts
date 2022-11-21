@@ -59,6 +59,21 @@ export class AuthService {
       catchError(this.errorHandlerService.handleError<Medico>("medico"))
     )
   }
-
+  loginMedico(crm: Pick<Medico, "crm">, senha: Pick<User, "senha">): Observable<{
+    token: string; userId: Pick<User, "id">;
+  }> {
+    return this.http.post('http://localhost:4000/auth/loginMedico', { crm, senha }, this.httpOptions).pipe(
+      first(),
+      tap((tokenObject: any) => {
+        this.userId = tokenObject.userId;
+        localStorage.setItem("token", tokenObject.token);
+        this.isUserLoggedIn$.next(true);
+        this.router.navigate(["usuario"])
+      }),
+      catchError(this.errorHandlerService.handleError<{
+        token: string; userId: Pick<User, "id">
+      }>("loginMedico"))
+    )
+  }
 
 }

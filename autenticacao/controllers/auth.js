@@ -4,6 +4,10 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken')
 const User = require('../models/user');
 const Medico = require('../models/user');
+const express = require('express')
+const app = express()
+//aplicamos um middleware
+app.use(express.json())
 
 exports.signup = async (req, res, next) => {
     const errors = validationResult(req);
@@ -52,7 +56,7 @@ exports.login = async (req, res, next) => {
             error.statusCode = 401;
             throw error;
         }
-
+ 
         const storedUser = user[0][0];
 
         const isEqual = await bcrypt.compare(senha, storedUser.senha);
@@ -83,4 +87,5 @@ exports.login = async (req, res, next) => {
         next(err)
     }
 }
+
 

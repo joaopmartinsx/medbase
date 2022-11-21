@@ -11,8 +11,8 @@ app.post('/eventos', (req,res) =>{
 
     axios.post('http://localhost:3000/signup', signup)
     axios.post('http://localhost:3000/login', login)
-    axios.post('http://localhost:4000/auth/loginMedico', loginMedico)
     axios.post('http://localhost:4000/auth/Medico', Medico)
+    axios.post('http://localhost:4000/auth/loginMedico', loginMedico)
 
     res.status(200).send({msg:"ok"})
 });

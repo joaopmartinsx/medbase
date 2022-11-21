@@ -1,1 +1,16 @@
-<p>login-medico works!</p>
+<app-header></app-header>
+<div class="box">
+  <div class="box-login">
+    <h2>Efetue o Login/ Médico</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+      <input  type="text" formControlName="crm" placeholder="CRM" required>
+      <input type="password" formControlName="senha" name="password" placeholder="Senha" required>
+      <div class="form-group-login left">
+        <input type="submit" name="acao" value="Logar!" >
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<app-footer></app-footer>

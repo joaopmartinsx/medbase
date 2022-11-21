@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import {Routes,RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { AreaMedicaComponent } from './area-medica/area-medica.component';
+import { LoginMedicoComponent } from './login-medico/login-medico.component';
 import { MainBodyComponent } from './main-body/main-body.component';
 import { ConsultasComponent } from './pages/consultas/consultas.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProntoAtendimentoComponent } from './pages/pronto-atendimento/pronto-atendimento.component';
 import { SuporteTecnicoComponent } from './pages/suporte-tecnico/suporte-tecnico.component';
+import { PaginaMedicoComponent } from './pagina-medico/pagina-medico.component';
 import { PaginaUsuarioComponent } from './pagina-usuario/pagina-usuario.component';
 import { RegisterMedicoComponent } from './register-medico/register-medico.component';
 import { SignupComponent } from './signup/signup.component';
@@ -24,6 +26,14 @@ const routes: Routes = [
   {
     path: 'medico',
     component: RegisterMedicoComponent
+  },
+  {
+    path: 'loginMedico',
+    component: LoginMedicoComponent
+  },
+  {
+    path: 'telaMedico',
+    component: PaginaMedicoComponent
   },
   {
     path: 'signup',
