@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../services/login/login.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-area-medica',
@@ -15,7 +16,7 @@ export class AreaMedicaComponent implements OnInit {
   loginForm!: FormGroup;
 
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
     this.loginForm = this.createFormGroup();
@@ -28,7 +29,16 @@ export class AreaMedicaComponent implements OnInit {
   }
 
    login(): void {
-   this.authService.login(this.loginForm.value.cpf,this.loginForm.value.senha).subscribe();
+   this.authService.login(this.loginForm.value.cpf,this.loginForm.value.senha).subscribe(
+    (msg) => {
+      if(msg.token){
+        console.log('autenticado')
+        this.router.navigate(["usuario"]);
+      }else{
+        console.log('nao autenticado')
+      }
+    }
+   );
   }
 }
 

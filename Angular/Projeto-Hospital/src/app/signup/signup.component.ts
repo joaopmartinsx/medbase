@@ -28,8 +28,12 @@ export class SignupComponent implements OnInit {
 
   signup(): void {
     this.authService.signup(this.signupForm$.value).subscribe((msg) => {
-      console.log(msg);
-      this.router.navigate(["area-medica"]);
+      if(msg.auth){
+        console.log('autenticado')
+        this.router.navigate(["area-medica"]);
+      }else{
+        console.log('nao autenticado')
+      }
     });
   }
 

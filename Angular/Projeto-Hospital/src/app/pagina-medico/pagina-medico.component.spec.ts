@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaginaUsuarioComponent } from './pagina-usuario.component';
+import { PaginaMedicoComponent } from './pagina-medico.component';
 
-describe('PaginaUsuarioComponent', () => {
-  let component: PaginaUsuarioComponent;
-  let fixture: ComponentFixture<PaginaUsuarioComponent>;
+describe('PaginaMedicoComponent', () => {
+  let component: PaginaMedicoComponent;
+  let fixture: ComponentFixture<PaginaMedicoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PaginaUsuarioComponent ]
+      declarations: [ PaginaMedicoComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PaginaUsuarioComponent);
+    fixture = TestBed.createComponent(PaginaMedicoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -21,4 +21,3 @@ describe('PaginaUsuarioComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-

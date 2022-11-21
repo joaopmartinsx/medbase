@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="box">
+  <div class="box-login">
+    <h2>Cadastrar - se/ Médico</h2>
+    <form [formGroup]="medicoForm" (ngSubmit)="ngMedico()"  novalidate>
+      <input #value value="" matInput type="text" formControlName="crm" placeholder="CRM" required>
+      <input  matInput type="text" formControlName="nome" placeholder="Nome" required>
+      <input  matInput type="text" formControlName="especialidade" placeholder="Especialidade" required>
+      <input  matInput type="password" formControlName="senha" placeholder="Senha" required>
+      <div class="form-group-login left">
+        <button color="accent" mat-raised-button type="submit"><span>Cadastrar</span></button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<app-footer></app-footer>

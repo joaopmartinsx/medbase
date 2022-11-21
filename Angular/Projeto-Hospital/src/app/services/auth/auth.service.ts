@@ -7,6 +7,7 @@ import { first, catchError, tap } from 'rxjs/operators';
 import { User } from 'src/app/models/user/User';
 import { ErrorHandlerService } from '../error/error-handler.service';
 import { Router } from '@angular/router';
+import { Medico } from 'src/app/models/medico/Medico';
 
 @Injectable({
   providedIn: 'root'
@@ -43,6 +44,12 @@ export class AuthService {
       catchError(this.errorHandlerService.handleError<{
         token: string; userId: Pick<User, "id">
       }>("login"))
+    )
+  }
+  medico(medico: Omit<Medico, "id">): Observable<Medico> {
+    return this.http.post<Medico>(`${this.url}/medico`, medico, this.httpOptions).pipe(
+      first(),
+      catchError(this.errorHandlerService.handleError<Medico>("medico"))
     )
   }
 }

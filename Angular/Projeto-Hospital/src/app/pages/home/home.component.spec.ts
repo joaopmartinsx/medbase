@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaginaUsuarioComponent } from './pagina-usuario.component';
+import { HomeComponent } from './home.component';
 
-describe('PaginaUsuarioComponent', () => {
-  let component: PaginaUsuarioComponent;
-  let fixture: ComponentFixture<PaginaUsuarioComponent>;
+describe('HomeComponent', () => {
+  let component: HomeComponent;
+  let fixture: ComponentFixture<HomeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PaginaUsuarioComponent ]
+      declarations: [ HomeComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PaginaUsuarioComponent);
+    fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -21,4 +21,3 @@ describe('PaginaUsuarioComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-

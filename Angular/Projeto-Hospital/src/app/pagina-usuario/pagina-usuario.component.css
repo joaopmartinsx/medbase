@@ -1,0 +1,261 @@
+.menu-wraper{width: 300px;}
+.menu{
+    overflow-x: hidden;
+    height: 100%;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #455a64;
+    float: left;
+    width: 300px;
+}
+
+header{
+  position: relative;
+  left: 300px;
+  padding: 10px 0;
+  background: #78909c;
+  width: calc(100% - 300px);
+}
+
+.loggout{
+    float: right;
+}
+
+.loggout a {
+  padding: 0 20px;
+  position: relative;
+  top: 4px;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.loggout a > span{
+  font-size: 16px;
+}
+
+.menu-btn {
+  float: left;
+  cursor: pointer;
+  font-size: 22px;
+  color: white;
+}
+
+
+.box-usuario{
+  text-align: center;
+}
+
+.avatar-usuario{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #ccc;
+  z-index: 999;
+
+}
+
+
+.avatar-usuario fa-icon{
+  font-size: 100px;
+  color: white;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+
+.imagem-usuario{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  position: relative;
+  border-radius: 50%;
+  border: 3px solid #2F3D42;
+}
+
+.imagem-usuario img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+}
+
+.nome-usuario{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.nome-usuario p{
+    color: white;
+
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.w100{
+  width: 100%;
+}
+
+.w50{
+  width: 48%;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+    float: right;
+
+}
+
+.content {
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
+    padding: 10px;
+}
+
+.box-content {
+  background: white;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.box-content h2 {
+  font-weight: 300;
+  font-size: 23px;
+}
+
+.clear{clear:both}
+
+.center{padding: 0 2%;margin: 0 auto;}
+
+.items-menu{
+  margin-top: 30px;
+}
+
+.items-menu h2{
+  text-align: left;
+  font-weight: 300;
+  font-size: 18px;
+  background: #2F3D42;
+  color: white;
+  padding: 8px;
+}
+
+.items-menu a{
+  display: block;
+  padding: 8px;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid #2F3D42;
+}
+
+.content{
+  width: calc(100% - 300px);
+  position: relative;
+  left: 300px;
+  padding: 10px;
+}
+
+
+.active-link{
+  background-color: black;
+}
+
+
+
+.box-content{
+  background: white;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.box-content h2{
+  font-weight: 300;
+  font-size: 23px;
+}
+
+
+.box-content form{
+  margin: 30px 0;
+}
+
+
+.box-content form label{
+  font-size: 17px;
+  font-weight: 300;
+  color: black;
+  display: block;
+}
+
+.box-content .form-group{
+  margin: 15px 0;
+}
+
+
+.box-content form textarea{
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 150px;
+  padding: 8px;
+  resize: vertical;
+}
+
+
+.box-content form input[type=file]{
+  margin-top: 8px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.box-content form input[type=text],
+.box-content form input[type=password]
+{
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 40px;
+  padding-left: 8px;
+}
+
+.box-content form select{
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 40px;
+  padding-left: 8px;
+}
+
+
+.box-content form input[type=submit]{
+  width: 90px;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 8px;
+  color: white;
+  font-size: 16px;
+  background: #0edfb2;
+  border: 0;
+}

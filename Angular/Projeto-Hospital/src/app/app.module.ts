@@ -17,6 +17,14 @@ import { MatInput, MatInputModule} from '@angular/material/input'
 import {MatButtonModule} from '@angular/material/button'
 import {MatToolbarModule} from '@angular/material/toolbar'
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { HomeComponent } from './pages/home/home.component';
+import { ConsultasComponent } from './pages/consultas/consultas.component';
+import { ProntoAtendimentoComponent } from './pages/pronto-atendimento/pronto-atendimento.component';
+import { SuporteTecnicoComponent } from './pages/suporte-tecnico/suporte-tecnico.component';
+import { RegisterMedicoComponent } from './register-medico/register-medico.component';
+import { PaginaMedicoComponent } from './pagina-medico/pagina-medico.component';
+import { LoginMedicoComponent } from './login-medico/login-medico.component';
 
 
 @NgModule({
@@ -28,7 +36,14 @@ import { NoopAnimationsModule } from "@angular/platform-browser/animations";
     AreaMedicaComponent,
     PaginaUsuarioComponent,
     SignupComponent,
-    PaginaUsuarioComponent
+    PaginaUsuarioComponent,
+    HomeComponent,
+    ConsultasComponent,
+    ProntoAtendimentoComponent,
+    SuporteTecnicoComponent,
+    RegisterMedicoComponent,
+    PaginaMedicoComponent,
+    LoginMedicoComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +55,8 @@ import { NoopAnimationsModule } from "@angular/platform-browser/animations";
     MatInputModule,
     NoopAnimationsModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    FontAwesomeModule,
   ],
   providers: [LoginService],
   bootstrap: [AppComponent]

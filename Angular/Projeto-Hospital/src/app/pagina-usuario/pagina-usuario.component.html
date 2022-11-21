@@ -1,1 +1,39 @@
-<p>pagina-usuario works!</p>
+<div class="menu">
+  <div class="menu-wrapper">
+    <div class="box-usuario">
+      <div class="avatar-usuario">
+        <fa-icon [icon]="faUser"></fa-icon>
+      </div>
+      <div class="nome-usuario">
+        <p>Beno Lopes Dias</p>
+        <p>Paciente</p>
+      </div>
+    </div>
+
+    <div class="items-menu">
+      <h2>Atendimento</h2>
+      <a routerLink="/usuario/consulta" (click)="consulta()" routerLinkActive="active-link">Consultas</a>
+      <a routerLink="/usuario/home" (click)="receita()" routerLinkActive="active-link">Receitas</a>
+      <a routerLink="/usuario/pronto-atendimento" (click)="atendimento()"
+        routerLinkActive="active-link">Pronto-Atendimento</a>
+      <a routerLink="/usuario/suporte-tecnico" (click)="tecnico()" routerLinkActive="active-link">Suporte técnico</a>
+    </div>
+
+  </div>
+</div>
+
+<header>
+  <div class="center">
+    <div class="menu-btn">
+      <fa-icon [icon]="faBars"></fa-icon>
+    </div>
+    <div class="loggout">
+      <a href="#"><i class="fa fa-home"></i> <span>Pagina Inicial</span> </a>
+    </div>
+    <div class="clear"></div>
+  </div>
+</header>
+
+<router-outlet></router-outlet>
+
+

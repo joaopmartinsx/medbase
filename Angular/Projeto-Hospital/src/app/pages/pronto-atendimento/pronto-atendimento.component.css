@@ -1,0 +1,157 @@
+.content{
+  width: calc(100% - 300px);
+  position: relative;
+  left: 300px;
+  padding: 10px;
+  background-color: rgb(225, 225, 225);
+}
+
+.box-content{
+  background: white;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.box-content h2{
+  font-weight: 300;
+  font-size: 23px;
+}
+
+.texto-agendar{
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.texto-agendar h4{
+  font-weight: 600;
+  font-size: 23px;
+  color: rgb(29, 29, 98);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.box-agendar{
+  width: 240px;
+  height: 250px;
+  padding: 15px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-radius: 10px;
+  justify-items: end;
+  margin-bottom: 25px;
+  background-color: rgb(225, 225, 225);
+
+}
+
+.content-agendar{
+  height: 115px;
+}
+
+.content-agendar p{
+  color: #005DF9;
+  margin: 0;
+  opacity: 0.8;
+  font-size: 15px;
+  font-style: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  line-height: 18px;
+  padding-right: 2rem;
+}
+
+.price-agendar{
+  height: 55px;
+}
+
+.price-agendar p{
+  color: #333333;
+  opacity: 0.8;
+  margin: 0;
+  font-size: 13px;
+  font-style: normal;
+  margin-top: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+
+
+.box-medico button{
+  border: 2px solid #005DF9;
+  height: 45px;
+  font-size: 13px;
+  margin-top: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  text-transform: none;
+  width: 100%;
+}
+
+
+
+.lateral{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-medico{
+  border: 2px solid #F4F4F4;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.medico{
+  display: grid;
+  grid-template-columns: 60% 25%;
+}
+
+.medico-img span{
+  box-sizing: border-box;
+  display: block;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.medico-img span fa-icon{
+  font-size: 30px;
+}
+
+.content-medico{
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+.content-medico h4{
+  color: #818181;
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+}
+
+.content-medico h4{
+  color: #818181;
+  margin-top: 5px;
+  font-size: 14px;
+  font-style: normal;
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+}

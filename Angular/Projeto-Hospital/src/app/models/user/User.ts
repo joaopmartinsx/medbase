@@ -5,4 +5,6 @@ export interface User {
   email: string;
   idade: number;
   senha: string;
+  auth: false;
+  message: string;
 }
