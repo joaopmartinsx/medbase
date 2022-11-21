@@ -1,25 +1,25 @@
-const express = require('express')
-const {v4: uuidv4} = require('uuid')
+const express = require('express');
+const bodyParser = require('body-parser');
+const authRoutes = require('./routes/auth');
+const errorController = require('./controllers/error')
 const app = express()
-app.use(express.json())
+const ports = process.env.PORT || 4000;
 
-const areaDeLogin = {}
+app.use(bodyParser.json())
 
-app.post('/login/:id/espera', (req,res) =>{
-    const idObs = uuidv4()
-    const {login, sintomas} = req.body
-    const areaDeLoginId = areaDeLogin[req.params.id] || []
-    areaDeLoginId.push({id: idObs, login: login, sintomas: sintomas})
-    areaDeLogin[req.params.id] = areaDeLoginId
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next()
 
-    res.status(201).send(areaDeLoginId)
-})
+});
 
-app.get('/login/:id/espera', (req,res) =>{
-    res.send(areaDeLogin[req.params.id] || [])
-})
+app.use('/auth', authRoutes);
+
+app.use(errorController.get404)
+
+app.use(errorController.get500)
 
 
-app.listen(3000, () => {
-    console.log('rodando')
-})
+app.listen(ports, () => console.log(`Listening on port ${ports}`))

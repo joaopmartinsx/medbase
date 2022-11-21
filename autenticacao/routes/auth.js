@@ -7,7 +7,8 @@ const router = express.Router()
 const User = require('../models/user');
 
 const authController = require('../controllers/auth')
-
+const mysql = require('mysql2');
+ 
 router.post(
     '/signup',
     [
@@ -27,16 +28,7 @@ router.post(
 
 router.post('/login', authController.login)
 
-router.post(
-    '/medico',
-    [
-       body('crm').trim().not().isEmpty(),
-       body('senha').trim().isLength({min: 3}), 
-    ],
-    authController.medico
-);
 
-router.post('/loginMedico', authController.loginMedico)
 
 
 module.exports = router;

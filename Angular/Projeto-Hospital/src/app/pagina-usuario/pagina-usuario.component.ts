@@ -18,13 +18,11 @@ export class PaginaUsuarioComponent implements OnInit {
   faBars = faBars;
   faUser = faUser;
   faPencil = faPencil;
-  private url = "http://localhost:3000/auth/login";
 
   constructor(private router: Router,
-    private activatedRoute: ActivatedRoute, private http: HttpClient,private authService: AuthService, private areaMedica: AreaMedicaComponent) { }
+    private activatedRoute: ActivatedRoute, private http: HttpClient) { }
 
   ngOnInit(): void {
-
   }
 
 

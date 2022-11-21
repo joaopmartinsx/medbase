@@ -24,6 +24,13 @@ export class AuthService {
 
   constructor(private http: HttpClient, private errorHandlerService: ErrorHandlerService, private router: Router) { }
 
+  listarNome(){
+    return this.http.get<User>('http://localhost:3000/auth/signup').pipe(
+      (res) => res,
+      (err) => err,
+    )
+  }
+
   signup(user: Omit<User, "id">): Observable<User> {
     return this.http.post<User>(`${this.url}/signup`, user, this.httpOptions).pipe(
       first(),
@@ -47,9 +54,11 @@ export class AuthService {
     )
   }
   medico(medico: Omit<Medico, "id">): Observable<Medico> {
-    return this.http.post<Medico>(`${this.url}/medico`, medico, this.httpOptions).pipe(
+    return this.http.post<Medico>('http://localhost:4000/auth/Medico', medico, this.httpOptions).pipe(
       first(),
       catchError(this.errorHandlerService.handleError<Medico>("medico"))
     )
   }
+
+
 }
