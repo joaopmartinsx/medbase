@@ -31,8 +31,10 @@ export class AreaMedicaComponent implements OnInit {
    login(): void {
    this.authService.login(this.loginForm.value.cpf,this.loginForm.value.senha).subscribe(
     (msg) => {
-      if(msg.token){
-        console.log('autenticado')
+      if(msg.userId){
+        console.log(msg.userId)
+        localStorage.setItem("userId", JSON.stringify(msg.userId))
+        console.log(typeof msg.userId)
         this.router.navigate(["usuario/consulta"]);
       }else{
         console.log('nao autenticado')

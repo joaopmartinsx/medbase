@@ -1,4 +1,4 @@
 export interface Usuario{
-  id: any;
+  id: Number;
   nome: string;
 }

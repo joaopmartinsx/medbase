@@ -27,10 +27,9 @@ export class PaginaUsuarioComponent implements OnInit {
     private activatedRoute: ActivatedRoute, private service: UsuarioService) { }
 
   ngOnInit(): void {
-    this.service.list().subscribe(dados => this.nome = dados)
+    const id = JSON.parse(localStorage.getItem("userId") || "")
+    this.service.list(id).subscribe(dados => this.nome = dados)
   }
-
-
 
 
 

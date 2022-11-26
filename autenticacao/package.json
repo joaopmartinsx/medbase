@@ -17,6 +17,8 @@
     "express": "^4.18.2",
     "express-validator": "^6.14.2",
     "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "pool": "^0.4.1",
     "uuid": "^9.0.0"
   },
   "devDependencies": {

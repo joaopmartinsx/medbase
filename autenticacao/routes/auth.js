@@ -10,6 +10,7 @@ const User = require('../models/user');
 
 const authController = require('../controllers/auth')
 const mysql = require('mysql2');
+const pool = require('pool')
  
 router.post(
     '/signup',
@@ -30,20 +31,25 @@ router.post(
 
 router.post('/login', authController.login)
 router.get(
-    '/login/:id', (req,res, id) =>{
-        const conexao = mysql.createConnection({
+    '/login/:id', (req,res, error) =>{
+        console.log(req.params.id)
+        const pool = mysql.createConnection({
             host: "localhost",
             user: "root",
             password: "Ae@1254453",
             database: "hospital"
         })
 
+        const sql = "SELECT nome FROM cadastro_paciente WHERE id = " + req.params.id ;
 
-        conexao.query("SELECT * FROM cadastro_paciente",[id], (error, results, fields) => {
-            if (error){
-                res.status(500).json({mensagem: error.message})
+
+        pool.query(sql , (err, results, fields) => {
+            console.log(results)
+            if (results.length > 0){
+                return res.status(200).json(results)
+              }else {
+                return res.status(401).json({message: err})
               }
-              res.status(200).json(results)
         })
     }
 )

@@ -1,10 +1,10 @@
 export interface User {
-  id: null;
+  id: Number;
   cpf: string;
   nome: string;
   email: string;
   idade: number;
   senha: string;
-  auth: false;
+  auth: true;
   message: string;
 }

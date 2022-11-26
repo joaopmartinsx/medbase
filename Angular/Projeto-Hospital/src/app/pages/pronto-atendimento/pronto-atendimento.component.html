@@ -9,38 +9,23 @@
       <h4>Selecione o médico que deseja falar:</h4>
     </div>
 
-    <div class="box-medico">
+    <div class="box-medico" *ngFor="let teste of listar">
       <div class="medico">
         <div class="medico-img">
           <span>
             <fa-icon [icon]=faDoctor></fa-icon>
           </span>
         </div>
-        <div class="content-medico">
-          <h2>Dr. Beno Lopes Dias</h2>
-          <h4>Clinico Geral</h4>
-          <h5>CRM: SP 8943</h5>
+        <div class="content-medico" >
+          <h2>DR. {{teste.nome}}</h2>
+          <h4>{{teste.especialidade}}</h4>
+          <h5>{{teste.crm}}</h5>
         </div>
       </div>
       <button>Falar com médico</button>
     </div>
 
-        <div class="box-medico">
-      <div class="medico">
-        <div class="medico-img">
-          <span>
-            <fa-icon [icon]=faDoctor></fa-icon>
-          </span>
-        </div>
-        <div class="content-medico">
-          <h2>Dr. Beno Lopes Dias</h2>
-          <h4>Clinico Geral</h4>
-          <h5>CRM: SP 8943</h5>
-        </div>
-      </div>
-      <button>Falar com médico</button>
 
-    </div>
 
 
   </div>

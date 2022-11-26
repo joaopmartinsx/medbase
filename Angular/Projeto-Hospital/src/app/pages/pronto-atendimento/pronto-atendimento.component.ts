@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { faUserDoctor } from '@fortawesome/free-solid-svg-icons';
+import { Atendimento } from './pronto-atendimento';
+import { ProntoAtendimentoService } from './pronto-atendimento.service';
 
 @Component({
   selector: 'app-pronto-atendimento',
@@ -7,48 +10,16 @@ import { faUserDoctor } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./pronto-atendimento.component.css']
 })
 export class ProntoAtendimentoComponent implements OnInit {
+  listar!: Atendimento[];
   faDoctor = faUserDoctor;
-
-  dataAtual: Date = new Date();
-  diasCalendario: Date[] = [];
-
-  constructor() { }
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private service: ProntoAtendimentoService ) { }
 
   ngOnInit(): void {
-    this.construiCalendario();
+    this.service.list().subscribe(dados => this.listar = dados)
   }
 
-  construiCalendario(){
-    const ano = this.dataAtual.getFullYear();
-    const mes = this.dataAtual.getMonth();
 
-    const primeiroDiaDaSemana = 0
-    const ultimoDiaDaSemana = 6;
 
-    const dataInicial = new Date(ano, mes, 1);
-    while (dataInicial.getDay() !== ultimoDiaDaSemana){
-      dataInicial.setDate(dataInicial.getDate() - 1)
-    }
 
-    const dataFinal = new Date(ano, mes + 1, 0);
-    while (dataFinal.getDay() !== ultimoDiaDaSemana){
-      dataFinal.setDate(dataFinal.getDate() + 1)
-    }
-
-    this.diasCalendario = []
-    for(
-      let data = new Date(dataInicial.getTime());
-      data <= dataFinal;
-      data.setDate(data.getDate() + 1)
-    ){
-      this.diasCalendario.push(new Date(data.getTime()));
-    }
-  }
-
-  alterarMes(offsetMes: number) {
-    this.dataAtual.setMonth(this.dataAtual.getMonth() + offsetMes);
-    this.dataAtual = new Date(this.dataAtual.getTime());
-    this.construiCalendario();
-}
 
 }

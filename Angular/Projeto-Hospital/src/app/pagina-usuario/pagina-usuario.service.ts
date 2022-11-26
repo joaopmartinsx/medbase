@@ -7,13 +7,17 @@ import { tap } from 'rxjs';
 })
 
 export class UsuarioService {
-  private readonly API = 'http://localhost:3000/auth/login/:id'
+  private readonly API = 'http://localhost:3000/auth/login'
   constructor (private http : HttpClient) {
   }
-  list() {
-    return this.http.get<Usuario[]>(this.API)
+  list(id: number) {
+    return this.http.get<Usuario[]>(`${this.API}/${id}`)
     .pipe(
-      tap(console.log)
+      (res) => res,
+      (err) => err
     );
   }
 }
+
+// pegar semelhante ao service de login e passar somente os dados que quero que aparecea na tela * c
+// usaR o mesmo tipo de listagem para os medicos e passar os dados 
