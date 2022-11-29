@@ -79,4 +79,4 @@ export class AuthService {
 }
 
 
-// usar semelhante ao login para dar um select da postagem do id
+// usar semelhante ao login para dar um select da postagem do id *

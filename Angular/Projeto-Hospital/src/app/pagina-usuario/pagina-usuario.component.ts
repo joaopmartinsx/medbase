@@ -34,7 +34,7 @@ export class PaginaUsuarioComponent implements OnInit {
 
 
   receita(): void {
-    this.router.navigate(["usuario/home"])
+    this.router.navigate(["usuario/receitas"])
   }
 
   consulta(): void {

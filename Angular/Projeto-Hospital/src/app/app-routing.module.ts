@@ -44,7 +44,7 @@ const routes: Routes = [
     component: PaginaUsuarioComponent,
   },
   {
-    path: 'usuario/home',
+    path: 'usuario/receitas',
     component:HomeComponent
   },
   {
