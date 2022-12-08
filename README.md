@@ -94,7 +94,7 @@ ou (SSH)
 
 ## Vídeo
   
-[YouTube]()
+[YouTube](https://www.youtube.com/watch?v=fm6uBKeuJ0w&ab_channel=Jo%C3%A3oPedroMartinsXavier)
 
 ##### [(voltar ao topo)](#medbase)
 ---
