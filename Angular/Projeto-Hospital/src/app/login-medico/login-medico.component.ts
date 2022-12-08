@@ -25,16 +25,17 @@ export class LoginMedicoComponent implements OnInit {
   }
 
   login(): void {
-    this.authService.loginMedico(this.loginForm.value.crm,this.loginForm.value.senha).subscribe(
-     (msg) => {
-       if(msg.token){
-         console.log('autenticado')
-         this.router.navigate(["telaMedico"]);
-       }else{
-         console.log('nao autenticado')
-       }
-     }
+    this.authService.loginMedico(this.loginForm.value.crm, this.loginForm.value.senha).subscribe(
+      (msg) => {
+        if (msg.userId) {
+          console.log('autenticado')
+          localStorage.setItem("userId", JSON.stringify(msg.userId))
+          this.router.navigate(["telaMedico"]);
+        } else {
+          console.log('nao autenticado')
+        }
+      }
     );
-   }
+  }
 
 }

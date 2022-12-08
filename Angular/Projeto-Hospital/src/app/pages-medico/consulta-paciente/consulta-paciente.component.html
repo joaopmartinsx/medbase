@@ -1,0 +1,25 @@
+<app-pagina-medico></app-pagina-medico>
+<div class="content">
+    <div class="box-content">
+        <h2>Lista de Pacientes</h2>
+
+        <div class="texto-agendar">
+            <h4>Pacientes</h4>
+        </div>
+
+        <div class="box-medico" (click)="teste()">
+            <div class="box-medico2" *ngFor="let teste of paciente">
+                <div class="medico">
+                    <div class="content-medico">
+                        <a>
+                            {{teste.id}}
+                            {{teste.nome}}
+                            {{teste.cpf}}
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>

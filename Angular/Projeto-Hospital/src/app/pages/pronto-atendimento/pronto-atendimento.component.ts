@@ -12,7 +12,7 @@ import { ProntoAtendimentoService } from './pronto-atendimento.service';
 export class ProntoAtendimentoComponent implements OnInit {
   listar!: Atendimento[];
   faDoctor = faUserDoctor;
-  constructor(private router: Router, private activatedRoute: ActivatedRoute, private service: ProntoAtendimentoService ) { }
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, private service: ProntoAtendimentoService) { }
 
   ngOnInit(): void {
     this.service.list().subscribe(dados => this.listar = dados)

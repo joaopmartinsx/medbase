@@ -1,24 +1,25 @@
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { Consulta } from "./consulta";
+import { receita } from "./receita";
 import { catchError, first, Observable, tap } from "rxjs";
 import { ErrorHandlerService } from '../../services/error/error-handler.service';
+import { User } from "src/app/models/user/User";
 
 @Injectable({
     providedIn: 'root'
 })
 
-export class ConsultaService {
-    private readonly API = 'http://localhost:8000/auth/sintoma'
+export class receitaService {
+    private readonly API = 'http://localhost:5000/auth/receitas'
     httpOptions: { headers: HttpHeaders } = {
         headers: new HttpHeaders({ "Content-Type": "application/json" })
     }
     constructor(private http: HttpClient, private errorHandlerService: ErrorHandlerService,) {
     }
-    consulta(user: Pick<Consulta, "id">): Observable<Consulta> {
-        return this.http.post<Consulta>(`${this.API}`, user, this.httpOptions).pipe(
+    receita(user: Pick<receita, "id">): Observable<receita> {
+        return this.http.post<receita>(`${this.API}`, user, this.httpOptions).pipe(
             first(),
-            catchError(this.errorHandlerService.handleError<Consulta>("consulta"))
+            catchError(this.errorHandlerService.handleError<receita>("receita"))
         )
     }
 }

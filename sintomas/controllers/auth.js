@@ -1,4 +1,4 @@
-const Sintomas  = require('../models/user');
+const Sintomas = require('../models/user');
 const { validationResult } = require('express-validator');
 
 const bcrypt = require('bcryptjs');
@@ -10,9 +10,16 @@ exports.sintomas = async (req, res, next) => {
 
     const sintomas = req.body.sintomas
     const tempo = req.body.tempo
-    const alergia = req.body.alergia
-    const doenca = req.body.doenca
-    const diabetes = req.body.diabetes
+    const medicamento = req.body.medicamento
+    const cronico = req.body.cronico
+    const fumante = req.body.fumante
+    const bebida = req.body.bebida
+    const alimento = req.body.alimento
+    const alimentoDiferente = req.body.alimentoDiferente
+    const cirurgia = req.body.cirurgia
+    const nome = req.body.nome
+    const cpf = req.body.cpf
+
 
 
     try {
@@ -20,9 +27,15 @@ exports.sintomas = async (req, res, next) => {
         const userDetails = {
             sintomas,
             tempo,
-            alergia,
-            doenca,
-            diabetes
+            medicamento,
+            cronico,
+            fumante,
+            bebida,
+            alimento,
+            alimentoDiferente,
+            cirurgia,
+            nome,
+            cpf
         }
 
         const result = await Sintomas.save(userDetails);

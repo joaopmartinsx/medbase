@@ -1,0 +1,67 @@
+.content {
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
+    padding: 10px;
+    background-color: rgb(225, 225, 225);
+}
+
+.box-content {
+    background: white;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.box-content h2 {
+    font-weight: 300;
+    font-size: 23px;
+}
+
+.paciente {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    place-content: center;
+}
+
+.box-video {
+    background: #ccc;
+    height: 100%;
+    width: 100%;
+}
+
+.avatar-usuario {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+}
+
+.box-content form input {
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 8px;
+    color: white;
+    font-size: 16px;
+    background: #0edfb2;
+    border: 0;
+    cursor: pointer;
+}
+
+.box-content .chat {
+    margin-top: 15rem;
+}
+
+
+.box-content form textarea {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 150px;
+    padding: 8px;
+    resize: vertical;
+}

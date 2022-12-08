@@ -1,0 +1,33 @@
+.content {
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
+    padding: 10px;
+    background-color: rgb(225, 225, 225);
+}
+
+.box-content {
+    background: white;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.form {
+    margin: 5rem 0;
+    padding: 0 3rem;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form .titulo {
+    padding: 2rem 0;
+}
+
+.form .titulo h4 {
+    font-weight: 100;
+}
+
+.form .resposta {
+    border: 1px solid #ccc;
+    padding: 1.5rem 0;
+}

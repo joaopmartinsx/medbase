@@ -1,4 +1,4 @@
-.content{
+.content {
   width: calc(100% - 300px);
   position: relative;
   left: 300px;
@@ -6,44 +6,44 @@
   background-color: rgb(225, 225, 225);
 }
 
-.active-link{
+.active-link {
   background-color: black;
 }
 
-.active-link::before{
+.active-link::before {
   content: '> ';
 }
 
-.box-content{
+.box-content {
   background: white;
   padding: 10px;
   margin-bottom: 25px;
 }
 
-.box-content h2{
+.box-content h2 {
   font-weight: 300;
   font-size: 23px;
 }
 
 
-.box-content form{
+.box-content form {
   margin: 30px 0;
 }
 
 
-.box-content form label{
+.box-content form label {
   font-size: 17px;
   font-weight: 300;
   color: black;
   display: block;
 }
 
-.box-content .form-group{
+.box-content .form-group {
   margin: 15px 0;
 }
 
 
-.box-content form textarea{
+.box-content form textarea {
   margin-top: 8px;
   font-size: 16px;
   font-weight: normal;
@@ -56,7 +56,7 @@
 }
 
 
-.box-content form input[type=file]{
+.box-content form input[type=file] {
   margin-top: 8px;
   width: 100%;
   padding: 8px;
@@ -64,8 +64,7 @@
 }
 
 .box-content form input[type=text],
-.box-content form input[type=password]
-{
+.box-content form input[type=password] {
   margin-top: 8px;
   font-size: 16px;
   font-weight: normal;
@@ -76,7 +75,7 @@
   padding-left: 8px;
 }
 
-.box-content form select{
+.box-content form select {
   margin-top: 8px;
   font-size: 16px;
   font-weight: normal;
@@ -88,7 +87,7 @@
 }
 
 
-.box-content form input[type=submit]{
+.box-content form button {
   width: 90px;
   height: 30px;
   cursor: pointer;
@@ -97,5 +96,5 @@
   font-size: 16px;
   background: #0edfb2;
   border: 0;
+  cursor: pointer;
 }
-

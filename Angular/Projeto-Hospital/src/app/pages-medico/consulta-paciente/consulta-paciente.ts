@@ -1,4 +1,4 @@
-export interface Consulta {
+export interface ConsultaPaciente {
     id: number;
     sintomas: string;
     tempo: string;
@@ -11,6 +11,4 @@ export interface Consulta {
     cirurgia: string;
     nome: string;
     cpf: string;
-    auth: false;
-    message: string;
 }

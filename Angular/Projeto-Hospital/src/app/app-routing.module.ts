@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
-import {Routes,RouterModule} from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AreaMedicaComponent } from './area-medica/area-medica.component';
 import { LoginMedicoComponent } from './login-medico/login-medico.component';
 import { MainBodyComponent } from './main-body/main-body.component';
+import { ConsultaPacienteComponent } from './pages-medico/consulta-paciente/consulta-paciente.component';
+import { ListaPacienteComponent } from './pages-medico/lista-paciente/lista-paciente.component';
+import { ReceitarPacientesComponent } from './pages-medico/receitar-pacientes/receitar-pacientes.component';
+import { VideoPacienteComponent } from './pages-medico/video-paciente/video-paciente.component';
 import { ConsultasComponent } from './pages/consultas/consultas.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProntoAtendimentoComponent } from './pages/pronto-atendimento/pronto-atendimento.component';
@@ -32,6 +36,22 @@ const routes: Routes = [
     component: LoginMedicoComponent
   },
   {
+    path: 'telaMedico/ConsultaPaciente',
+    component: ConsultaPacienteComponent
+  },
+  {
+    path: 'telaMedico/ReceitaPaciente',
+    component: ReceitarPacientesComponent
+  },
+  {
+    path: 'telaMedico/videoPaciente',
+    component: VideoPacienteComponent
+  },
+  {
+    path: 'telaMedico/Paciente',
+    component: ListaPacienteComponent
+  },
+  {
     path: 'telaMedico',
     component: PaginaMedicoComponent
   },
@@ -45,14 +65,14 @@ const routes: Routes = [
   },
   {
     path: 'usuario/receitas',
-    component:HomeComponent
+    component: HomeComponent
   },
   {
     path: 'usuario/consulta',
     component: ConsultasComponent
   },
   {
-    path:'usuario/pronto-atendimento',
+    path: 'usuario/pronto-atendimento',
     component: ProntoAtendimentoComponent
   },
   {
@@ -69,7 +89,7 @@ const routes: Routes = [
 
 
 @NgModule({
- exports: [
+  exports: [
     RouterModule,
   ],
   imports: [

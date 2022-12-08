@@ -5,18 +5,50 @@
       <fa-icon [icon]=faPencil></fa-icon> Seja Bem vindo(a)!! Pode nos contar um pouquinho sobre oque você está sentido?
     </h2>
 
-    <form [formGroup]="sintomasForm$" (ngSubmit)="sintomas()" novalidate>
-      <input #value value="" matInput type="text" formControlName="sintomas" placeholder="Nome" required>
-      <input  matInput type="text" formControlName="tempo" placeholder="Email" required>
-      <input  matInput type="text" formControlName="alergia" placeholder="Idade" required>
-      <input  matInput type="text" formControlName="doenca" placeholder="CPF" required>
-      <input  matInput type="text" formControlName="diabetes" placeholder="Senha" required>
-      <div class="form-group-login left">
-        <button color="accent" mat-raised-button type="submit"><span>Cadastrar</span></button>
-        <a routerLink="/medico">Sou médico</a>
+    <form [formGroup]="sintomasForm$" (ngSubmit)="ngSintomas()" novalidate>
+      <div class="form-group">
+        <input type="text" formControlName="nome" placeholder="nome">
+        <input type="text" formControlName="cpf" placeholder="cpf">
       </div>
-
+      <div class="form-group">
+        <label>Quais são os seus sintomas?</label>
+        <textarea type="text" formControlName="sintomas" rows="5" cols="33"></textarea>
+      </div>
+      <div class="form-group">
+        <label>A quanto tempo você vem sentindo isso?</label>
+        <textarea type="text" formControlName="tempo" rows="5" cols="33"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Usa medicamento continuo?</label>
+        <textarea type="text" formControlName="medicamento" rows="5" cols="33"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Possui alguma doença crônica? Qual(is)?</label>
+        <textarea type="text" rows="5" formControlName="cronico" cols="33"></textarea>
+      </div>
+      <div class="form-group">
+        <label>É fumante?</label>
+        <textarea type="text" formControlName="fumante" rows="5" cols="33"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Consome bebidas alcoólica?</label>
+        <textarea type="text" formControlName="bebida" rows="5" cols="33"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Quando foi a última vez que se alimentou?</label>
+        <textarea type="text" formControlName="alimento" rows="5" cols="33"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Comeu algo diferente?</label>
+        <textarea type="text" formControlName="alimentoDiferente" rows="5" cols="33"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Passou por algum processo cirúrgico? Qual(is)?</label>
+        <textarea type="text" formControlName="cirurgia" rows="5" cols="33"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" mat-raised-button value="Enviar"></button>
+      </div>
     </form>
   </div>
 </div>
-

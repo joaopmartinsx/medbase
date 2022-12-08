@@ -4,19 +4,18 @@
       <div class="avatar-usuario">
         <fa-icon [icon]="faUser"></fa-icon>
       </div>
-      <div class="nome-usuario">
-        <p>Dr. Fran</p>
-        <p>Médico</p>
+      <div class="nome-usuario" *ngFor="let names of nome">
+        <p>Dr. {{names.nome}}</p>
+        <p>{{names.especialidade}}</p>
       </div>
     </div>
 
     <div class="items-menu">
       <h2>Atendimento</h2>
-      <a routerLink=""  routerLinkActive="active-link">Consultas Pacientes</a>
-      <a routerLink=""  routerLinkActive="active-link">Receitar Pacientes</a>
-      <a routerLink=""
-        routerLinkActive="active-link">Chat - Pacientes</a>
-      <a routerLink=""  routerLinkActive="active-link">Suporte técnico</a>
+      <a routerLink="/telaMedico/ConsultaPaciente" routerLinkActive="active-link">Consultas Pacientes</a>
+      <a routerLink="/telaMedico/ReceitaPaciente" routerLinkActive="active-link">Receitar Pacientes</a>
+      <a routerLink="/telaMedico/videoPaciente" routerLinkActive="active-link">Video - Pacientes</a>
+      <a routerLink="tela" routerLinkActive="active-link">Suporte técnico</a>
     </div>
 
   </div>
@@ -35,6 +34,3 @@
 </header>
 
 <router-outlet></router-outlet>
-
-
-

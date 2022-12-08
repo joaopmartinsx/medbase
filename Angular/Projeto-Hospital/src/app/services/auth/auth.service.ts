@@ -18,13 +18,13 @@ export class AuthService {
   isUserLoggedIn$ = new BehaviorSubject<boolean>(false);
   userId!: Pick<User, "id">
 
-  httpOptions: {headers: HttpHeaders} = {
-    headers: new HttpHeaders({"Content-Type": "application/json"})
+  httpOptions: { headers: HttpHeaders } = {
+    headers: new HttpHeaders({ "Content-Type": "application/json" })
   }
 
   constructor(private http: HttpClient, private errorHandlerService: ErrorHandlerService, private router: Router) { }
 
-  listarNome(){
+  listarNome() {
     return this.http.get<User>('http://localhost:3000/auth/signup').pipe(
       (res) => res,
       (err) => err,
