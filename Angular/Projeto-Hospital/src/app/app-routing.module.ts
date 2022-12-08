@@ -48,7 +48,7 @@ const routes: Routes = [
     component: VideoPacienteComponent
   },
   {
-    path: 'telaMedico/Paciente',
+    path: 'telaMedico/Paciente/:id',
     component: ListaPacienteComponent
   },
   {

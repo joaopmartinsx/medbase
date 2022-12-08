@@ -19,6 +19,10 @@ export class ConsultaPacienteComponent implements OnInit {
 
   teste(): void {
     const id = JSON.parse(localStorage.getItem("userId") || "")
+  }
+
+  teste1(id: number): void {
+    this.router.navigate(['telaMedico/Paciente/', id])
     console.log(id)
   }
 

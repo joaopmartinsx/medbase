@@ -31,3 +31,15 @@
     border: 1px solid #ccc;
     padding: 1.5rem 0;
 }
+
+.box-content .form-group button {
+    width: auto;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 8px;
+    color: white;
+    font-size: 16px;
+    background: #0edfb2;
+    border: 0;
+    cursor: pointer;
+}

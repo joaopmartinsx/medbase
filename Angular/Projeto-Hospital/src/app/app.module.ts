@@ -16,6 +16,7 @@ import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInput, MatInputModule } from '@angular/material/input'
 import { MatButtonModule } from '@angular/material/button'
 import { MatToolbarModule } from '@angular/material/toolbar'
+import { MatSelectModule } from '@angular/material/select'
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './pages/home/home.component';
@@ -65,6 +66,7 @@ import { ListaPacienteComponent } from './pages-medico/lista-paciente/lista-paci
     MatButtonModule,
     MatToolbarModule,
     FontAwesomeModule,
+    MatSelectModule
   ],
   providers: [LoginService],
   bootstrap: [AppComponent]
